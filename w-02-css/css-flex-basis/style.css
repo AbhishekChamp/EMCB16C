@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border: 2px solid #333;
+    padding: 10px;
+    height: 200px;
+}
+
+.item {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.item-1 {
+    flex-basis: 150px;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.item-2 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.item-3 {
+    flex-basis: 400px;
+    flex-grow: 3;
+    flex-shrink: 0;
+}
+
+.item-4 {
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}

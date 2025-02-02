@@ -1,0 +1,51 @@
+.parent {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 200px;
+    background: #ddd;
+}
+
+/* .child {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: #ff6b6b;
+    padding: 10px;
+} */
+
+.child {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    background: #ff6b6b;
+}
+
+/* .child {
+  position: absolute;
+  top: 5vh; 
+  left: 5vw;
+} */
+
+/* .child {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+} */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .child {
+        top: 10px;
+        left: 15px;
+    }
+}
+
+/* For mobile */
+@media (max-width: 480px) {
+    .child {
+        top: 5px;
+        left: 5px;
+    }
+}
