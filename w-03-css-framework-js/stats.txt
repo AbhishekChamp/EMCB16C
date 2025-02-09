@@ -1,0 +1,21 @@
+Bootstrap - 297 ms
+Tailwind - 777 ms
+Plain - 216 ms
+
+Bootstrap
+No Throttling - 369 ms
+Fast 4G - 660 ms
+Slow 4G - 1.61 s
+3G - 5.22 s
+
+Tailwind
+No Throttling - 643 ms
+Fast 4G - 881 ms
+Slow 4G - 2.71 s
+3G - 8.95 s
+
+Plain
+No Throttling - 259 ms
+Fast 4G - 547 ms
+Slow 4G - 1.37 s
+3G - 4.36 s
