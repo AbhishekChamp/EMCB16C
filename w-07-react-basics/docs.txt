@@ -1,0 +1,23 @@
+Node Modules:
+    * Contains all npm packages required for the project.
+    * Do not edit this folder manually.
+    * It is automatically managed by npm.
+index.html:
+    * The single HTML file that serves as the container for your React app. 
+    * It includes a <div id="root"></div> element where your app will be rendered. 
+The Public Folder:
+    *  Any images, fonts, or files that won’t change during runtime.  
+The src Folder:
+    * main.jsx:
+        * The entry point of your application.
+        * Renders the root component (typically <App />) into the DOM.
+    * App.jsx & App.css:
+        * The main component that acts as the central part of your app.
+        * Contains the primary layout and logic for rendering child components.
+VITE CONFIG:
+    * vite.config.js:
+        * Configuration file for vite
+        * Customizes build settings, plugins, and server options.
+package.json:
+    * Simplifies the inital setup on you can focus on writing code.
+    * Provides sensible defaults for most projects.

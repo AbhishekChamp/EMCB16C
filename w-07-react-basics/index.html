@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOMContentLoaded vs Load Event</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            #content {
+                display: none;
+                margin-top: 20px;
+                color: green;
+                font-size: 24px;
+            }
+            #image {
+                width: 300px;
+                height: auto;
+                margin-top: 20px;
+            }
+            #loading {
+                font-size: 20px;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testing DOMContentLoaded vs Load Event</h1>
+
+        <p id="loading">Loading content...</p>
+
+        <div id="content">
+            <h2>Content Manipulated After DOM is Loaded</h2>
+            <p>
+                This content was manipulated after the DOMContentLoaded event.
+            </p>
+            <img
+                id="image"
+                src="https://picsum.photos/200/300"
+                alt="Placeholder Image"
+            />
+        </div>
+
+        <script>
+            // Listening for the DOMContentLoaded event
+            document.addEventListener("DOMContentLoaded", function () {
+                // This code will execute when the DOM is ready (HTML structure is parsed)
+                document.getElementById("loading").textContent =
+                    "DOM fully loaded and parsed!";
+                document.getElementById("content").style.display = "block";
+            });
+
+            // Listening for the window's load event (fires when everything including images is loaded)
+            window.addEventListener("load", function () {
+                // This code will execute when the entire page, including images, is fully loaded
+                console.log(
+                    "Window fully loaded (including images, stylesheets, etc.)",
+                );
+            });
+        </script>
+    </body>
+</html>
