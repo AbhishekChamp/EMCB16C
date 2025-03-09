@@ -1,0 +1,19 @@
+/* src/styles.css */
+
+.user-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+}
+
+.counter {
+    margin-top: 20px;
+}
+
+.counter button {
+    margin-right: 10px;
+}
+
+.home-page {
+    padding: 20px;
+}
